@@ -1,0 +1,12 @@
+Quinoa Burger,Slider,Kale-Chimichurri,3.00
+Corned Beef,Slider,Kraut-Pickles-Aioli,3.00
+Cheeseburger,Slider,Onions-Pickles,2.00
+Korean,Slider,Peanut Butter-Kimchi,3.00
+Mystery Meat,Slider,Ask Server,3.00
+Venison Chili Cheese,Fries,Chili-Cheese,3.00
+La Poutine,Fries,Cheese Curd-Gravy,3.00
+Regular,Fries,Salt-Pepper,2.00
+Mushroom Broth,Soup,Oyster-Porcini,3.00
+Chicken Tortilla,Soup,Jalepeno-Cilantro,3.00
+Corktown Smore,Dessert,Cinnamon-Nutella-Fluff,3.00
+Fluffer Nutter,Dessert,Fluff-Peanut Butter,3.00
