@@ -4,9 +4,9 @@ public class PointOfSale {
     private String name;
     private String category;
     private String description;
-    private double price;
+    String price;
 
-    public PointOfSale(String name, String category, String description, double price) {
+    public PointOfSale(String name, String category, String description, String price) {
         this.name = name;
         this.category = category;
         this.description = description;
@@ -37,11 +37,11 @@ public class PointOfSale {
         this.description = description;
     }
 
-    public double getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 }

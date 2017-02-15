@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8d8d5b8-dfe2-44ee-9107-7a1e32cceee5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PointOfSale.java" afterPath="$PROJECT_DIR$/src/PointOfSale.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +19,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="491">
+              <caret line="31" column="57" lean-forward="false" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -33,25 +32,25 @@
       <file leaf-file-name="PointOfSale.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PointOfSale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
-                <element signature="e#394#395#0" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
-                <element signature="e#461#462#0" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
-                <element signature="e#528#529#0" expanded="true" />
-                <element signature="e#559#560#0" expanded="true" />
-                <element signature="e#607#608#0" expanded="true" />
-                <element signature="e#647#648#0" expanded="true" />
-                <element signature="e#685#686#0" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
-                <element signature="e#773#774#0" expanded="true" />
-                <element signature="e#819#820#0" expanded="true" />
-                <element signature="e#851#852#0" expanded="true" />
-                <element signature="e#879#880#0" expanded="true" />
-                <element signature="e#921#922#0" expanded="true" />
-                <element signature="e#955#956#0" expanded="true" />
+                <element signature="e#386#387#0" expanded="true" />
+                <element signature="e#413#414#0" expanded="true" />
+                <element signature="e#453#454#0" expanded="true" />
+                <element signature="e#485#486#0" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
+                <element signature="e#551#552#0" expanded="true" />
+                <element signature="e#599#600#0" expanded="true" />
+                <element signature="e#639#640#0" expanded="true" />
+                <element signature="e#677#678#0" expanded="true" />
+                <element signature="e#711#712#0" expanded="true" />
+                <element signature="e#765#766#0" expanded="true" />
+                <element signature="e#811#812#0" expanded="true" />
+                <element signature="e#843#844#0" expanded="true" />
+                <element signature="e#871#872#0" expanded="true" />
+                <element signature="e#913#914#0" expanded="true" />
+                <element signature="e#947#948#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menuItems.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="menuItems.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/menuItems.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
@@ -99,11 +98,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/PointOfSale.java" />
         <option value="$PROJECT_DIR$/MenuItems.txt" />
         <option value="$PROJECT_DIR$/menuItems" />
         <option value="$PROJECT_DIR$/menuItems.txt" />
         <option value="$PROJECT_DIR$/src/MenuFromFile.java" />
+        <option value="$PROJECT_DIR$/src/PointOfSale.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
@@ -567,12 +566,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1487173519179</updated>
-      <workItem from="1487173522610" duration="7877000" />
+      <workItem from="1487173522610" duration="11669000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7877000" />
+    <option name="totallyTimeSpent" value="11669000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
@@ -587,7 +586,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30965593" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -653,39 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PointOfSale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menuItems.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MenuFromFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -696,10 +662,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/PointOfSale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#765#766#0" expanded="true" />
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="491">
+          <caret line="31" column="57" lean-forward="false" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menuItems.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
           <folding />
         </state>
       </provider>
