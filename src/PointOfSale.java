@@ -44,6 +44,7 @@ public class PointOfSale {
     public void setPrice(String price) {
         this.price = price;
     }
+
     @Override
     public String toString() {
         return String.format("%-25s" + "%-15s" + "%-25s" + "%-25s", name, category, description, price);

@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+//Validators for entire program
+
 public class Validator {
     public static String getString(Scanner sc, String prompt) {
         System.out.print(prompt);
