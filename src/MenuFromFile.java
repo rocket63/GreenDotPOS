@@ -1,17 +1,18 @@
 import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 
 
 public class MenuFromFile {
 
-    public static StringBuilder readTextFromFile(String fileName) {
+    public static ArrayList<PointOfSale> readTextFromFile(String fileName) {
 
         Path filePath = Paths.get(fileName);
 
         File menuItems = filePath.toFile();
 
-        StringBuilder result = new StringBuilder();
+        ArrayList<PointOfSale> result = new ArrayList<PointOfSale>();
 
         try {
             FileReader r = new FileReader(menuItems);
@@ -20,7 +21,12 @@ public class MenuFromFile {
             String line = reader.readLine();
             while (line != null) {
 
-                result.append(line + "\n");
+        String[] menuItemArray = line.split(",");
+        String lastPosition = menuItemArray[4];
+        if (lastPosition != null){
+            result.add(new PointOfSale(menuItemArray[0],menuItemArray[1],menuItemArray[2],menuItemArray[3]));
+        }
+                //result.append(line + "\n");
                 line = reader.readLine();
             }
             reader.close();
@@ -34,5 +40,6 @@ public class MenuFromFile {
             return null;
 
         }
+
     }
 }
