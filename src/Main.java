@@ -6,6 +6,8 @@ public class Main {
 
         ArrayList<PointOfSale> pointOfSaleList = new ArrayList<>();
 
+        Driver.driver();
+
 
         StringBuilder menuItemTemp = MenuFromFile.readTextFromFile("menuItems.txt");
 
