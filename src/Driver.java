@@ -15,13 +15,8 @@ public class Driver extends Main {
         double priceTotal = 0.00;
         double priceSubTotal = 0.00;
         int itemsTotal = 0;
-
-<<<<<<< HEAD
-=======
-        double priceTotal = 0.0;
         double grandTotal = 0.0;
         String paymentMethod = "";
->>>>>>> 26a87ef71aa70b92f4b3870a59b98729beedcb72
 
         while (true) {
 
@@ -36,18 +31,11 @@ public class Driver extends Main {
             int userChoice = Validator.getInt(scan, "Enter item # you want to order: ", 1, 12);
             int numItems = Validator.getInt(scan, "How many of item # " + userChoice + " would you like: ");
 
-            //TODO is PointOfSale correct here to get the right info for the new arraylist?
             ArrayList<PointOfSale> userOrder = new ArrayList<>();
 
-            //TODO add userChoice to new userOrder ArrayList, pull info from POSarraylist
-            //
-            //for (int i = 0; i < pointOfSaleList.size();i++) {
-             //if(userChoice == pointOfSaleList.get(i+1)) {
              userOrder.add(pointOfSaleList.get(userChoice - 1));
 
-
-
-            //TODO get price using point of sale? to get just the price from the userOrder arraylist
+            //Get price from pointOfSale and using in userOrder
             if ((pointOfSaleList.get(userChoice-1).getName().equalsIgnoreCase("Cheeseburger")) ||
                     (pointOfSaleList.get(userChoice -1).getName().equalsIgnoreCase("Regular"))) {
                 priceSubTotal = numItems * 2.00;
@@ -59,19 +47,16 @@ public class Driver extends Main {
             }
             priceTotal = priceTotal + priceSubTotal;
 
-
-<<<<<<< HEAD
             System.out.println();
             System.out.println("Price: $" + priceTotal + "0");
-=======
+
             //todo put this in its own method
-            int itemsTotal = (userOrder.size() + 1);
+            itemsTotal = (userOrder.size() + 1);
             double taxRate = 0.05;
             double salesTax = 0.0;
             salesTax = priceTotal * taxRate;
             grandTotal = priceTotal + taxRate;
             System.out.println();
->>>>>>> 26a87ef71aa70b92f4b3870a59b98729beedcb72
             System.out.println("Items: " + itemsTotal);
             System.out.println("Subtotal: " + priceTotal);
             System.out.println("Tax: " + salesTax);
