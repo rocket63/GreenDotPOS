@@ -46,6 +46,6 @@ public class PointOfSale {
     }
     @Override
     public String toString() {
-        return name + category + description + price ;
+        return String.format("%-25s" + "%-15s" + "%-25s" + "%-25s", name, category, description, price);
     }
 }
