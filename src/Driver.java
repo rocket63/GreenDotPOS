@@ -10,17 +10,24 @@ public class Driver extends Main {
 
     public static void driver() {
         Scanner scan = new Scanner(System.in);
+        ArrayList<PointOfSale> pointOfSaleList = new ArrayList<>();
 
-        double priceTotal = 0.0;
+        double priceTotal = 0.00;
+        double priceSubTotal = 0.00;
+        int itemsTotal = 0;
+
 
         while (true) {
 
             //Printing out menu
-            //TODO number menu
-            System.out.println(MenuFromFile.readTextFromFile("menuItems.txt"));
+
+            pointOfSaleList = MenuFromFile.readTextFromFile("menuItems.txt");
+            for (int i = 0; i < pointOfSaleList.size(); i++) {
+                System.out.println((i + 1) + ". " + pointOfSaleList.get(i).toString());
+            }
 
             //Gets user order and assigns choices to new arraylist
-            int userChoice = Validator.getInt(scan, "Enter burger # you want to order: ", 1, 12);
+            int userChoice = Validator.getInt(scan, "Enter item # you want to order: ", 1, 12);
             int numItems = Validator.getInt(scan, "How many of item # " + userChoice + " would you like: ");
 
             //TODO is PointOfSale correct here to get the right info for the new arraylist?
@@ -28,22 +35,27 @@ public class Driver extends Main {
 
             //TODO add userChoice to new userOrder ArrayList, pull info from POSarraylist
             //
-            /**for (int i = 0; i < POS ARRAY;i++) {
-             if(userChoice == POS ARRAY(i+1)) {
-             userOrder.add(userChoice(i-1));
-             }
-             **/
+            //for (int i = 0; i < pointOfSaleList.size();i++) {
+             //if(userChoice == pointOfSaleList.get(i+1)) {
+             userOrder.add(pointOfSaleList.get(userChoice - 1));
+
+
 
             //TODO get price using point of sale? to get just the price from the userOrder arraylist
-            /**if () {
-             priceTotal = 2;
-             } else {
-             priceTotal = 3;
-             }**/
+            if ((pointOfSaleList.get(userChoice-1).getName().equalsIgnoreCase("Cheeseburger")) ||
+                    (pointOfSaleList.get(userChoice -1).getName().equalsIgnoreCase("Regular"))) {
+                priceSubTotal = numItems * 2.00;
+                itemsTotal = itemsTotal + numItems;
+            }
+             else{
+                priceSubTotal =numItems * 3.00;
+                itemsTotal = itemsTotal + numItems;
+            }
+            priceTotal = priceTotal + priceSubTotal;
 
-            int itemsTotal = (userOrder.size() + 1);
+
             System.out.println();
-            System.out.println("Price: " + priceTotal);
+            System.out.println("Price: $" + priceTotal + "0");
             System.out.println("Items: " + itemsTotal);
             System.out.println();
             int userContinue = Validator.getInt(scan, "Enter 1 to continue to checkout, 2 to view the menu again: ", 1, 2);
