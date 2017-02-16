@@ -21,9 +21,6 @@ public class Driver extends Main {
         while (true) {
 
             //Welcome and print menu
-            System.out.println("Welcome to Green Dot Stables!");
-            System.out.println("Our menu: ");
-            System.out.println();
             pointOfSaleList = printMenu(); //see method
 
             //Gets user order and assigns choices to new array list
@@ -52,7 +49,6 @@ public class Driver extends Main {
             } else if (userContinue == 2) {
                 continue; //shows menu again and starts over
             }
-
         }
 
         //Ask user for payment method - validate entry
@@ -62,6 +58,9 @@ public class Driver extends Main {
 
     //Printing menu
     public static ArrayList<PointOfSale> printMenu() {
+        System.out.println("Welcome to Green Dot Stables!");
+        System.out.println("Our menu: ");
+        System.out.println();
         ArrayList<PointOfSale> pointOfSaleList;
         pointOfSaleList = MenuFromFile.readTextFromFile("menuItems.txt");
         for (int i = 0; i < pointOfSaleList.size(); i++) {
@@ -75,6 +74,7 @@ public class Driver extends Main {
     }
 
     //Create new array list with user order only
+
     public static void createUserOrderArrayList(ArrayList<PointOfSale> pointOfSaleList, ArrayList<PointOfSale> userOrder, int userChoice, int numItems) {
         for (int i = 0; i < numItems; i++) {
             userOrder.add(pointOfSaleList.get(userChoice - 1));
@@ -139,7 +139,11 @@ public class Driver extends Main {
         System.out.println();
         System.out.println();
         System.out.println("Thanks for coming to Green Dot Stables! Happy pastures!");
-        System.exit(0);
+        System.out.println();
+        System.out.println("Next order: ");
+        System.out.println();
+        driver();
+
     }
 }
 
