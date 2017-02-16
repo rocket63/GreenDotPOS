@@ -8,7 +8,6 @@ public class Main {
 
         Driver.driver();
 
-
         pointOfSaleList = MenuFromFile.readTextFromFile("menuItems.txt");
         for (int i = 0; i < pointOfSaleList.size(); i++) {
            System.out.println(pointOfSaleList.get(i).toString());
