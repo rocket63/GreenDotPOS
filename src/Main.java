@@ -8,7 +8,6 @@ public class Main {
 
         Driver.driver();
 
-
         StringBuilder menuItemTemp = MenuFromFile.readTextFromFile("menuItems.txt");
 
         //System.out.print(menuItemTemp);
