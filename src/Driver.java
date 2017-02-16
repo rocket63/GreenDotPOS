@@ -86,7 +86,7 @@ public class Driver extends Main {
         }
 
         //Ask user for payment method - validate entry
-        //TODO put this in a separate method?
+
         System.out.println();
         String paymentOption = Validator.getPaymentOption(scan, "Please enter payment option, Card/Check/Cash: ");
         if (paymentOption.equalsIgnoreCase("Card")) {
