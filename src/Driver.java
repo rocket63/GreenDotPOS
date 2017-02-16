@@ -70,6 +70,8 @@ public class Driver extends Main {
             double changeNeeded = cashGiven - priceTotal;
         }
 
+        System.out.println("RECEIPT: ");
+
     }
 }
 
