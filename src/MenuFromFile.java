@@ -42,4 +42,22 @@ public class MenuFromFile {
         }
 
     }
+    public static void writeTextToFile(String fileName, String input) {
+
+        Path filePath = Paths.get(fileName);
+
+        File menuItems = filePath.toFile();
+
+        try {
+            PrintWriter out = new PrintWriter(new FileOutputStream(
+                    menuItems, true));
+
+            out.print("\n");
+            out.print(input + "\b");
+
+            out.close();
+
+        } catch (FileNotFoundException ex) {
+        }
+    }
 }

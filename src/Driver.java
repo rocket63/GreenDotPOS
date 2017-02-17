@@ -25,7 +25,7 @@ public class Driver extends Main {
 
             //Gets user order and assigns choices to new array list
             System.out.println();
-            int userChoice = Validator.getInt(scan, "Enter item # you want to order: ", 1, 12);
+            int userChoice = Validator.getInt(scan, "Enter item # you want to order: ", 1, pointOfSaleList.size());
             int numItems = Validator.getInt(scan, "How many of item # " + userChoice + " would you like: ");
             createUserOrderArrayList(pointOfSaleList, userOrder, userChoice, numItems); //see method
 
@@ -42,12 +42,15 @@ public class Driver extends Main {
             System.out.println();
             grandTotal = receiptInfo(priceTotal, itemsTotal);
 
-            int userContinue = Validator.getInt(scan, "Enter 1 to continue to checkout, 2 to view the menu again: ", 1, 2);
+            int userContinue = Validator.getInt(scan, "Enter 1 to continue to checkout, 2 to view the menu again: ", 1, 3);
             System.out.println();
             if (userContinue == 1) {
                 break; //calls paymentOptions method below
             } else if (userContinue == 2) {
                 continue; //shows menu again and starts over
+            } else if (userContinue == 3) {
+                addMenuItem();
+
             }
         }
 
@@ -144,6 +147,20 @@ public class Driver extends Main {
         System.out.println();
         driver();
 
+    }
+    public static void addMenuItem() {
+
+        Scanner scan2 = new Scanner(System.in);
+
+        System.out.println("Welcome to the secret Add Item System.");
+        System.out.println("Please enter the menu item to be added in the following format:");
+        System.out.println("Item name,Category,Description,Price,null");
+        System.out.println("No spaces surrounding commas and be sure to include null at the end.");
+        String newItem = scan2.nextLine();
+
+        MenuFromFile.writeTextToFile("menuItems.txt", newItem);
+
+        return;
     }
 }
 
