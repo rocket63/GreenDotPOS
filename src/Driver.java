@@ -1,12 +1,10 @@
-import java.awt.*;
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
  * Created by davidshinabarger on 2/15/17.
  */
-public class Driver extends Main {
+public class Driver {
 
     public static void driver() {
         Scanner scan = new Scanner(System.in);
@@ -18,6 +16,7 @@ public class Driver extends Main {
         double grandTotal = 0.00;
         String paymentMethod = "";
         ArrayList<PointOfSale> userOrder = new ArrayList<>();
+
         while (true) {
 
             //Welcome and print menu
